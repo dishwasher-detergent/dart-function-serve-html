@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:path/path.dart' as p;
 
-final staticFolder = p.join(p.dirname(Platform.script.toFilePath()), '../static');
+final staticFolder = p.join(p.dirname(Platform.script.toFilePath()), 'static');
 
 /// Throws an error if any of the keys are missing from the object
 /// @param obj - The object to check
