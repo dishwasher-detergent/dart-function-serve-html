@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:dart-function-serve-html/utils.dart';
+import 'package:starter_template/utils.dart';
 
 Future<dynamic> main(final context) async {
   if (context.req.method == 'GET') {
