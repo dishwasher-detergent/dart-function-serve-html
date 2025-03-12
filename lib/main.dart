@@ -4,7 +4,9 @@ import 'package:starter_template/utils.dart';
 import 'package:path/path.dart' as p;
 
 Future<dynamic> main(final context) async {
-    final result = await Process.run('find', ['~', '-name', 'index.html'], 
+    final home = Platform.environment['HOME'] ?? Platform.environment['USERPROFILE'];
+    
+    final result = await Process.run('find', [home, '-name', 'index.html'], 
       runInShell: true);
     
     if (result.exitCode == 0) {
