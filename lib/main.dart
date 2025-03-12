@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:starter_template/utils.dart';
+import 'package:path/path.dart' as p;
 
 Future<dynamic> main(final context) async {
   final dir = Directory(p.dirname(Platform.script.toFilePath()));
