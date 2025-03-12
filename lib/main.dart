@@ -4,7 +4,7 @@ import 'package:starter_template/utils.dart';
 
 Future<dynamic> main(final context) async {
   final List<FileSystemEntity> entities = await dir.list().toList();
-  context.log(entities)
+  context.log(entities);
 
   if (context.req.method == 'GET') {
     return context.res.text(getStaticFile('index.html'), 200,
