@@ -4,7 +4,8 @@ import 'package:starter_template/utils.dart';
 import 'package:path/path.dart' as p;
 
 Future<dynamic> main(final context) async {
-  final dir = Directory(p.dirname(Platform.script.toFilePath()));
+  final folder = p.join(p.dirname(Platform.script.toFilePath()), '/usr/local/server/src/function/server');
+  final dir = Directory(folder);
   final List<FileSystemEntity> entities = await dir.list().toList();
   context.log(entities);
 
